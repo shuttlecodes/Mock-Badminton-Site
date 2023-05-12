@@ -1,0 +1,490 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+nav ul li a:hover{
+    color:rgb(3, 139, 85);
+}
+
+.promo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.col-1 h2{
+    font-size: 54px;
+}
+
+.col-1 h3{
+    font-size: 30px;
+    color: #707070;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+
+.col-1 p{
+    font-size: 16px;
+    color: #b7b7b7;
+    font-weight: 100;
+}
+
+.col-1 h4{
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+#buynow{
+    width: 120px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: white;
+    background: linear-gradient(to right, rgb(31, 47, 221), rgb(3, 139, 85));
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+
+#buynow:hover{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-1::after{
+    content: '';
+    width: 10px;
+    height: 57%;
+    background: linear-gradient(rgb(31, 47, 221), rgb(3, 139, 85));
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+
+.col-2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.col-2 .shoe{
+    width: 80%;
+}
+
+.color-box{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(rgb(31, 47, 221), rgb(3, 139, 85));
+    border-radius: 30px 0 0 30px;
+    height: 100%;
+    width: 90%;
+    z-index: -1;
+    transform: translateX(150px);
+}
+
+.add-btn img{
+    width: 35px;
+    margin-bottom: 5px;
+}
+
+.add-btn{
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.socials img{
+    height: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.socials{
+    text-align: center;
+}
+
+
+#apparel{
+    text-align: center;
+}
+
+h1{
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.display{
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; /*default main axis is horizontal, need to justify CONTENT (since multiline) to center horizontally*/
+    width: 100%;
+    border: 10px, black;
+}
+
+.row{
+    height: auto;
+    padding: 10px;
+    padding-top: 20px;
+    transition: all 0.3s;
+}
+
+.row:hover{
+    transform: translateY(-10px);
+}
+
+.display h2{
+    font-size: 20px;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+.display p{
+    color:#707070;
+    cursor: pointer;
+}
+
+.shoe-cll{
+    width: 300px;
+    cursor: pointer;
+}
+
+.color-line{
+    background: linear-gradient(to right, rgb(31, 47, 221), rgb(3, 139, 85));
+    width: 30%;
+    height: 5px;
+    padding-right: 10%;
+    margin-top: 100px;
+}
+
+.color-line-mini{
+    background: linear-gradient(to right, rgb(31, 47, 221), rgb(3, 139, 85));
+    width: 10%;
+    height: 5px;
+    padding-left: 10%;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 50px;
+    right: 50px;
+    z-index: 99; /*prevent overlap*/
+    border: none;
+    outline: none; 
+    background: black;
+    cursor: pointer; 
+    padding: 15px;
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+#myBtn:hover {
+    background: linear-gradient(rgb(31, 47, 221), rgb(3, 139, 85));
+}
+
+#myBtn img{
+    width: 10px;
+    height: auto;
+}
+
+.text-gradient{
+    font-size: 35;
+    background: -webkit-linear-gradient(left, rgb(31, 47, 221), rgb(3, 139, 85));
+    background-clip:border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight:800;
+}
+
+.mission{
+    width: 100%;
+    min-height: 60vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.mission h3{
+    font-size: 20px;
+    color: #b7b7b7;
+    margin: 20px 0 10px;
+    text-align: center;
+}
+
+.mission h2{
+    font-size: 30px;
+    color: black;
+    margin: 20px 0 10px;
+    text-align: center;
+    font-weight: 100;
+}
+
+#steps{
+    margin-top: -100px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    gap: 20px;
+    /*background-color: aliceblue;*/
+}
+
+.tab{
+    /* width: 30%; */
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    padding: 20px;
+    margin: 0;
+    align-items: center;
+    justify-content: left; 
+    display: flex;
+    box-shadow: 0 5px 35px rgba(30, 34, 40, .07);
+}
+
+.tab-link {
+    text-decoration: none;
+}
+
+.tab:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    transition-duration: 50ms;
+}
+
+.stepnum{
+    font-size: 60px;
+    background: -webkit-linear-gradient(rgb(31, 47, 221), rgb(3, 139, 85));
+    background-clip:border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight:400;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+.tab-inner h3{
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    margin: 20px 0 10px;
+}
+
+.tab-inner p{
+    margin: 0 0 20px;
+    font-size: 15px;
+    color:#707070;
+}
+
+.tabcontent{
+    margin-top: -150px;
+    margin-bottom: 100px;
+    padding: 50px;
+    display: flex;
+
+}
+
+.bluebox{
+    position: absolute;
+    left: 0;
+    background-color: aliceblue;
+    z-index: -1;
+    height: 800px;
+    width: 400px;
+    transform: translateY(-500px);
+}
+
+.bluebox2{
+    position: absolute;
+    right: 0;
+    background-color: aliceblue;
+    z-index: -1;
+    height: 600px;
+    width: 300px;
+    transform: translateY(-300px);
+}
+
+.tabcontent img{
+    margin-left: 35px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.tabtext{
+    padding-left: 100px;
+    padding-top: 50px;
+    width: 300px;
+    color:#707070;
+    font-weight: 200;
+}
+
+#shop{
+    width: 80px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: white;
+    background: linear-gradient(to right, rgb(31, 47, 221), rgb(3, 139, 85));
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#shop:hover{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quality-strings{
+    width: 100%;
+    min-height: 60vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.quality-strings h3{
+    font-size: 20px;
+    color: #b7b7b7;
+    margin: 20px 0 10px;
+    text-align: center;
+}
+
+.quality-strings h2{
+    font-size: 30px;
+    color: black;
+    margin: 20px 0 10px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.booking-box{
+    background-color: aliceblue;
+}
+
+@media only screen and (max-width:700px){
+    nav ul{
+        width: 100%;
+        background: linear-gradient(rgb(31, 47, 221), rgb(3, 139, 85));
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a{
+        color: #fff;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .promo{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+
+    .col-2{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+
+    .col-2 .shoe{
+        width: 70%;
+    }
+
+    .color-box{
+        transform: translateX(75px);
+    }
+
+    .col-1{
+        flex-basis: 100%;
+    }
+
+    .col-1 h2{
+        font-size: 35px;
+    }
+
+    .col-1 h3{
+        font-size: 15px;
+    }
+
+}
