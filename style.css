@@ -241,6 +241,8 @@ h1{
   
 #myBtn:hover {
     background: linear-gradient(rgb(31, 47, 221), rgb(3, 139, 85));
+    transform: scale(1.2);
+    transition: 0.2s;
 }
 
 #myBtn img{
@@ -259,7 +261,7 @@ h1{
 
 .mission{
     width: 100%;
-    min-height: 60vh;
+    min-height: 40vh;
     padding-left: 8%;
     padding-right: 8%;
     padding-top: 5%;
@@ -424,9 +426,39 @@ h1{
     font-weight: 100;
 }
 
-.booking-box{
+/* .booking-box{
     background-color: aliceblue;
+} */
+
+
+.center{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin-top: 60px;
 }
+
+#booknow{
+    width: 120px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: white;
+    background: linear-gradient(to right, rgb(31, 47, 221), rgb(3, 139, 85));
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    justify-items: center;
+    box-shadow: 0 5px 35px rgba(30, 34, 40, .07);
+}
+
+#booknow:hover{
+    transform: scale(1.1);
+}
+
+
 
 @media only screen and (max-width:700px){
     nav ul{
