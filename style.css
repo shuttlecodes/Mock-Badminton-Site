@@ -35,12 +35,13 @@
 nav{
     flex: 1;
     text-align: right;
+    padding-bottom: 10px;
 }
 
 nav ul li{
     list-style: none;
     display: inline-block;
-    margin-right: 30px;
+    margin-left: 30px;
 }
 
 nav ul li a{
@@ -97,14 +98,11 @@ nav ul li a:hover{
     background: linear-gradient(to right, rgb(31, 47, 221), rgb(3, 139, 85));
     border-radius: 6px;
     cursor: pointer;
-    transition: width 0.5s;
+    transition: 0.3s;
 }
 
 #buynow:hover{
-    width: 160px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    transform: scale(1.1);
 }
 
 .col-1::after{
@@ -143,6 +141,11 @@ nav ul li a:hover{
 .add-btn img{
     width: 35px;
     margin-bottom: 5px;
+}
+
+.add-btn:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .add-btn{
@@ -241,7 +244,7 @@ h1{
   
 #myBtn:hover {
     background: linear-gradient(rgb(31, 47, 221), rgb(3, 139, 85));
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 0.2s;
 }
 
@@ -251,7 +254,6 @@ h1{
 }
 
 .text-gradient{
-    font-size: 35;
     background: -webkit-linear-gradient(left, rgb(31, 47, 221), rgb(3, 139, 85));
     background-clip:border-box;
     -webkit-background-clip: text;
@@ -267,6 +269,7 @@ h1{
     padding-top: 5%;
     box-sizing: border-box;
     overflow: hidden;
+    padding-bottom: 100px;
 }
 
 .mission h3{
@@ -274,6 +277,7 @@ h1{
     color: #b7b7b7;
     margin: 20px 0 10px;
     text-align: center;
+    letter-spacing: 5px;
 }
 
 .mission h2{
@@ -370,8 +374,8 @@ h1{
 
 .tabcontent img{
     margin-left: 35px;
-    height: auto;
     border-radius: 20px;
+    height: 100%;
 }
 
 .tabtext{
@@ -391,14 +395,11 @@ h1{
     background: linear-gradient(to right, rgb(31, 47, 221), rgb(3, 139, 85));
     border-radius: 6px;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 #shop:hover{
-    width: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    transform: scale(1.1);
 }
 
 .quality-strings{
@@ -416,6 +417,7 @@ h1{
     color: #b7b7b7;
     margin: 20px 0 10px;
     text-align: center;
+    letter-spacing: 5px;
 }
 
 .quality-strings h2{
@@ -425,10 +427,6 @@ h1{
     text-align: center;
     font-weight: 100;
 }
-
-/* .booking-box{
-    background-color: aliceblue;
-} */
 
 
 .center{
@@ -461,13 +459,18 @@ h1{
 
 
 @media only screen and (max-width:700px){
+    nav{
+        text-align: left;
+    }
+    
     nav ul{
-        width: 100%;
-        background: linear-gradient(rgb(31, 47, 221), rgb(3, 139, 85));
+        width: 80%;
+        background: aliceblue;
         position: absolute;
-        top: 75px;
-        right: 0;
+        top: 100px;
+        left: 10%;
         z-index: 2;
+        border-radius: 0 0 10px 10px;
     }
 
     nav ul li{
@@ -477,7 +480,7 @@ h1{
     }
 
     nav ul li a{
-        color: #fff;
+        color: black;
     }
 
     .menu-icon{
@@ -519,4 +522,130 @@ h1{
         font-size: 15px;
     }
 
+    .display{
+        flex-direction: column;
+    }
+
+    .shoe-cll{
+        width: 80%;
+    }
+
+    .display{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px;
+    }
+    
+    .color-line{
+        width: 50%;
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+
+    .color-line-mini{
+        width: 30%;
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+
+    .mission h3{
+        font-size: 15px;
+    }
+
+    .mission h2{
+        font-size: 20px;
+    }
+
+    #steps{
+        margin-top: 50px;
+        flex-direction: column;
+    }
+
+    .bluebox{
+        display: none;
+    }
+
+    .bluebox2{
+        display: none;
+    }
+
+    .mobile-bg:before{
+        margin-top: 10%;
+        background-color: aliceblue;
+        content:"";
+        position: absolute;
+        height: 90%;
+        width: 200vw;
+        left: -100vw;
+        z-index: -1;
+
+    }
+
+    .mobile-bg2:before{
+        margin-top: 5%;
+        background-color: aliceblue;
+        content:"";
+        position: absolute;
+        height: 75%;
+        width: 200vw;
+        left: -100vw;
+        z-index: -1;
+
+    }
+
+    .stepnum{
+        font-size: 50px;
+    }
+
+    .tab-inner h3{
+        font-size: 17px;
+    }
+
+    .tab-inner p{
+        font-size: 13px;
+    }
+
+    .tabcontent img{
+        width: 80%;
+        height: max-content;
+        margin-left: 0px;
+        padding-left: 0px;
+        border-radius: 6px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+    .tabcontent{
+        flex-direction: column;
+    }
+
+    .tabtext{
+        padding-left: 0;
+        width: 100%;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .tabcontent{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .quality-strings h3{
+        font-size: 15px;
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .quality-strings h2{
+        font-size: 20px;
+        padding-top: 20px;
+    }
 }
